@@ -1,0 +1,22 @@
+@media (max-width: 1000px){
+   .perfil {
+      width: 100%;
+   }
+   aside {
+      width: 100%;
+      min-height: fit-content;
+      position: static;
+      padding: 15px;
+   }
+}
+
+@media (max-width: 600px) {
+   .galeria {
+      grid-template: 40px 1fr 1fr 1fr 1fr/ 1fr 1fr;
+      grid-template-areas: 'titulo titulo'
+                           'principal principal'
+                           'principal principal'
+                           'secundariaUno secundariaUno'
+                           'secundariaDos secundariaTres';
+   }
+}
