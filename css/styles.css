@@ -374,6 +374,7 @@ aside .articulo p {
   .galeria {
     grid-template: 40px 1fr 1fr 1fr 1fr/1fr 1fr;
     grid-template-areas: "titulo titulo" "principal principal" "principal principal" "secundariaUno secundariaUno" "secundariaDos secundariaTres";
+    max-height: 595px;
   }
 }
 
