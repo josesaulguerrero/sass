@@ -1,6 +1,5 @@
 .galeria {
    min-height: 265px;
-   max-height: 500px;
    display: grid;
    grid-template: 40px 1fr 1fr / 1fr 1fr 1fr 1fr;
    grid-template-areas: 'titulo    titulo    titulo        titulo'
