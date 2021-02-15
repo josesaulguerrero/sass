@@ -220,7 +220,6 @@ html::-webkit-scrollbar-thumb:hover {
 
 .galeria {
   min-height: 265px;
-  max-height: 300px;
   display: grid;
   grid-template: 40px 1fr 1fr/1fr 1fr 1fr 1fr;
   grid-template-areas: "titulo    titulo    titulo        titulo" "principal principal secundariaUno secundariaUno" "principal principal secundariaDos secundariaTres";
@@ -371,10 +370,17 @@ aside .articulo p {
   }
 }
 @media (max-width: 600px) {
+  aside .articulo span {
+    font-size: 1.4rem;
+  }
+  aside .articulo p {
+    font-size: 1.7rem;
+  }
+
   .galeria {
     grid-template: 40px 1fr 1fr 1fr 1fr/1fr 1fr;
     grid-template-areas: "titulo titulo" "principal principal" "principal principal" "secundariaUno secundariaUno" "secundariaDos secundariaTres";
-    max-height: 595px;
+    min-height: 595px;
   }
 }
 

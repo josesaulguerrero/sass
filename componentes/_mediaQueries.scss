@@ -11,6 +11,14 @@
 }
 
 @media (max-width: 600px) {
+   aside .articulo {
+      span {
+         font-size: 1.4rem;
+      }
+      p {
+         font-size: 1.7rem;
+      }
+   }
    .galeria {
       grid-template: 40px 1fr 1fr 1fr 1fr/ 1fr 1fr;
       grid-template-areas: 'titulo titulo'
