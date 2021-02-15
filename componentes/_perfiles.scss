@@ -1,0 +1,92 @@
+.perfil {
+   width: 50%;
+   min-width: 320px;
+   padding: 20px 0;
+   padding-bottom: 70px;
+   color: $colorClaro;
+   background-color: $colorSecundarion;
+   // overflow-y: scroll;
+   &__avatar {
+      display: block;
+      width: 110px;
+      margin: 0 auto;
+      border-radius: 20px;
+   }
+   &__nombre {
+      text-align: center;
+      font-size: 2rem;
+      @include titulos($fuenteDos);
+   }
+   &__titulo{
+      display: block;
+      @include titulos($fuenteDos);
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+   }
+   &__boton {
+      display: flex;
+      width: 100px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      margin: 15px auto;
+      // padding-top: 15px;
+      border: 1px solid $colorClaro;
+      border-radius: 20px;
+      color: $colorClaro;
+      font-family: $fuenteDos;
+      font-size: 1.7rem;
+      text-decoration: none;
+      @include titulos($fuenteDos);
+      transition: all .2s;
+      background-color: rgb(148, 94, 248);
+   }
+   &__boton:active {
+      transform: scale(.9);
+      background-color: rgb(102, 20, 253);
+   }
+   .perfil__minibio {
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin: 30px auto 0;
+      h2 {
+         @extend .perfil__nombre;
+         font-family: $fuenteUno;
+      }
+      h3 {
+         @extend .perfil__titulo;
+         font-family: $fuenteUno;
+      }
+   }
+}
+
+// .perfil::-webkit-scrollbar-track
+// {
+// 	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+// 	border-radius: 10px;
+// 	background-color: #F5F5F5;
+// }
+
+// .perfil::-webkit-scrollbar
+// {
+// 	width: 12px;
+// 	background-color: #cfa5F5;
+//    transition: all 5s;
+// }
+
+// .perfil::-webkit-scrollbar-thumb
+// {
+// 	border-radius: 10px;
+// 	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+// 	background-color: #b078ff;
+//    transition: all 5s;
+// }
+// .perfil::-webkit-scrollbar-thumb:hover
+// {
+// 	background-color: #371169;
+//    transition: all 5s;
+// }

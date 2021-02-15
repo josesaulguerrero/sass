@@ -1,0 +1,45 @@
+.ubicacion--perfil {
+	display: grid;
+	grid-template: 1fr 1fr/50px 1fr;
+	grid-template-areas: 'icono pais'
+                        'icono distancia';
+   gap: 5px;
+	height: 90px;
+	padding: 10px;
+	margin: 30px auto;
+	// padding: 20px 0 0;
+
+	@include caja;
+	i {
+		display: block;
+      grid-area: icono;
+		// float: left;
+		// padding-right: 10px;
+		font-size: 4rem;
+		color: $colorVariacion;
+      align-self: center;
+      justify-self: center;
+	}
+	h2 {
+      grid-area: pais;
+      align-self: end;
+      justify-self: start;
+		text-transform: uppercase;
+		// text-align: center;
+		font-weight: 600;
+		font-size: 2rem;
+		font-family: $fuenteDos;
+		line-height: 2rem;
+	}
+	h3 {
+      grid-area: distancia;
+      align-self: start;
+      justify-self: start;
+      color: rgba($colorPrimario, .8);
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 1.4rem;
+		font-family: $fuenteDos;
+		line-height: 1.6rem;
+	}
+}

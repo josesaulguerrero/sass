@@ -1,0 +1,12 @@
+aside {
+   width: 50%;
+   height: fit-content;
+   min-height: 100vh;
+   padding: 0 70px 70px 70px;
+   // margin-bottom: 30px;
+   position: sticky;
+   top: 0;
+   .articulo {
+      @include asideTemplate;
+   }
+}
